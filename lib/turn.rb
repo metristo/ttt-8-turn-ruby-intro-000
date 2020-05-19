@@ -43,10 +43,6 @@ def turn(board)
     move(board, index, token = "X")
     display_board(board)
   elsif valid_move?(board, index) == false
-    false
+    turn(board)
   end
-end
-
-while turn(board) == false
-  turn(board)
 end
