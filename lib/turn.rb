@@ -43,8 +43,6 @@ def turn(board)
     move(board, index, token = "X")
     display_board(board)
   elsif valid_move?(board, index) == false
-    loop do
-      turn(board)
-    end
+    repeat turn(board)
   end
 end
