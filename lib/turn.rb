@@ -7,7 +7,6 @@ def display_board(board)
 end
 
 def valid_move?(board, index)
-  index = string.to_i - 1
   if position_taken?(board, index) == true
     false
   elsif index.between?(0, 8)
@@ -16,7 +15,6 @@ def valid_move?(board, index)
 end
 
 def position_taken?(board, index)
-  index = string.to_i - 1
   if board[index] == " "
     false
   elsif board[index] == ""
