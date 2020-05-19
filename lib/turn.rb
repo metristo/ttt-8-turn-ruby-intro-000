@@ -41,7 +41,5 @@ def turn(board)
   input_to_index(string)
   if valid_move?(board, index) == true
     move
-  elsif valid_move? == false
-    turn
   end
 end
