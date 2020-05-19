@@ -37,11 +37,4 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
-  string = gets.strip
-  input_to_index(string)
-  if position_taken?(board, index) == true
-    false
-  elsif index.between?(0, 9)
-    move(board, index, token)
-  end
 end
