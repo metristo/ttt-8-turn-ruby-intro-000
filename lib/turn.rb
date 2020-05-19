@@ -40,6 +40,6 @@ def turn(board)
   string = gets.strip
   input_to_index(string)
   if valid_move?(board, index) == true
-    move
+    puts "yeah"
   end
 end
