@@ -40,6 +40,8 @@ def turn(board)
   string = gets.strip
   index = input_to_index(string)
   if valid_move?(board, index) == true
-    puts "yeah"
+    move(board, index, token = "x")
+  elsif valid_move?(board, index) == false
+    turn(board)
   end
 end
