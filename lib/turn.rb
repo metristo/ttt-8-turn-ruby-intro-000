@@ -39,9 +39,9 @@ def turn(board)
   puts "Please enter 1-9:"
   string = gets.strip
   input_to_index(string)
-  if valid_move?(board, index) == true
-    move(board, index, token)
-  elsif valid_move?(board, index) == false
-    turn(board)
+  if valid_move? == true
+    move
+  elsif valid_move? == false
+    turn
   end
 end
