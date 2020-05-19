@@ -42,6 +42,6 @@ def turn(board)
   if position_taken?(board, index) == true
     false
   elsif index.between?(0, 9)
-    true
+    move(board, index, token)
   end
 end
